@@ -1,0 +1,16 @@
+
+#AM24065 {
+    background-color: #1e1e1e;
+    color: #00ff66;
+    font-family: monospace;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #00ff66;
+}
+
+#AM24065 h2 {
+    text-align: center;
+    margin-top: 0;
+}
