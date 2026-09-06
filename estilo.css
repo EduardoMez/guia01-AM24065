@@ -1,3 +1,23 @@
+.comic-box {
+    position: relative;
+    max-width: 620px;
+    margin: 40px auto;
+    padding: 28px 32px 34px;
+    background-color: #ffcc00; /* Amarillo clásico de cómic */
+
+    /* Textura sutil de puntos de imprenta (Ben-Day dots) */
+    background-image: radial-gradient(#e6b800 18%, transparent 18%);
+    background-size: 8px 8px;
+
+    /* Bordes de tinta negra irregulares */
+    border: 4px solid #111;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+
+    /* Sombra dura estilo viñeta y ligera rotación */
+    box-shadow: 8px 8px 0px #111;
+    transform: rotate(-1deg);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
 
 body {
     background-color: #eef2f5;
@@ -22,7 +42,7 @@ body {
     border-left: 5px solid #0066ff;
     border-bottom: 5px solid #0066ff;
 
-   
+
     border-top: 1px solid #e2e8f0;
     border-right: 1px solid #e2e8f0;
     box-sizing: border-box;
@@ -73,4 +93,39 @@ body {
 #AM24065 h2 {
     text-align: center;
     margin-top: 0;
+}
+/* Efecto al pasar el cursor: rebote pop-art */
+.comic-box:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 12px 12px 0px #111;
+}
+
+/* Título estilo portada */
+.comic-title {
+    font-family: 'Bangers', cursive, sans-serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #dd05ec;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    /* Borde de texto negro grueso */
+    -webkit-text-stroke: 2px #111;
+    text-shadow: 4px 4px 0px #111;
+}
+
+/* Párrafo con tipografía manuscrita */
+.comic-body {
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+    margin: 0;
+}
+
+.comic-carnet{
+    color: darkred ;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-size: 18px;
 }
